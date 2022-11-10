@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c7bde94-0da0-42bf-8f1c-001f1e0de2dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/citiesPage.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/provincePage.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Fetch.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Spider.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enums/UserAgent.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/IPage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/IProvince.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/IRegion.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/regions/cities.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/regions/counties.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/regions/provinces.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2G5BN5B6Djoo90i5mZNCa6ocAzT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JavaScript" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.scratch.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c7bde94-0da0-42bf-8f1c-001f1e0de2dc" name="Changes" comment="" />
+      <created>1665668521731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665668521731</updated>
+      <workItem from="1665668522909" duration="17759000" />
+      <workItem from="1665722331396" duration="30056000" />
+      <workItem from="1665898084781" duration="158000" />
+      <workItem from="1665911407438" duration="841000" />
+      <workItem from="1666065608887" duration="12280000" />
+      <workItem from="1666231303068" duration="126000" />
+      <workItem from="1666320274834" duration="296000" />
+      <workItem from="1666407603759" duration="136000" />
+      <workItem from="1666455336066" duration="4000" />
+      <workItem from="1666501499645" duration="1826000" />
+      <workItem from="1666580340231" duration="19309000" />
+      <workItem from="1666950788619" duration="332000" />
+      <workItem from="1667096647221" duration="111000" />
+      <workItem from="1667116867504" duration="60000" />
+      <workItem from="1667117111235" duration="771000" />
+      <workItem from="1667191179377" duration="91000" />
+      <workItem from="1667274759669" duration="356000" />
+      <workItem from="1667357427513" duration="274000" />
+      <workItem from="1667384948243" duration="135000" />
+      <workItem from="1667450158136" duration="119000" />
+      <workItem from="1667538146691" duration="4139000" />
+      <workItem from="1667618818058" duration="98000" />
+      <workItem from="1667706978124" duration="90000" />
+      <workItem from="1667737596840" duration="12575000" />
+      <workItem from="1667798797757" duration="98000" />
+      <workItem from="1667804321014" duration="704000" />
+      <workItem from="1667831866641" duration="90000" />
+      <workItem from="1667882547605" duration="93000" />
+      <workItem from="1667989601174" duration="119000" />
+      <workItem from="1668013624888" duration="337000" />
+      <workItem from="1668025756848" duration="63000" />
+      <workItem from="1668054938026" duration="19397000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/config.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/enums/UserAgent.js" />
+        <option value="$PROJECT_DIR$/src/entities/Fetch.js" />
+        <option value="$PROJECT_DIR$/src/entities/Store.js" />
+        <option value="$PROJECT_DIR$/src/entities/Spider.js" />
+        <option value="$PROJECT_DIR$/src/entities/Config.js" />
+        <option value="$PROJECT_DIR$/src/interfaces/IRegion.js" />
+        <option value="$PROJECT_DIR$/src/interfaces/IProvince.js" />
+        <option value="$PROJECT_DIR$/src/interfaces/IPage.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

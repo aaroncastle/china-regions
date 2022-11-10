@@ -1,0 +1,126 @@
+[
+  {
+    "region": "北京市",
+    "page": "/11.html"
+  },
+  {
+    "region": "天津市",
+    "page": "/12.html"
+  },
+  {
+    "region": "河北省",
+    "page": "/13.html"
+  },
+  {
+    "region": "山西省",
+    "page": "/14.html"
+  },
+  {
+    "region": "内蒙古自治区",
+    "page": "/15.html"
+  },
+  {
+    "region": "辽宁省",
+    "page": "/21.html"
+  },
+  {
+    "region": "吉林省",
+    "page": "/22.html"
+  },
+  {
+    "region": "黑龙江省",
+    "page": "/23.html"
+  },
+  {
+    "region": "上海市",
+    "page": "/31.html"
+  },
+  {
+    "region": "江苏省",
+    "page": "/32.html"
+  },
+  {
+    "region": "浙江省",
+    "page": "/33.html"
+  },
+  {
+    "region": "安徽省",
+    "page": "/34.html"
+  },
+  {
+    "region": "福建省",
+    "page": "/35.html"
+  },
+  {
+    "region": "江西省",
+    "page": "/36.html"
+  },
+  {
+    "region": "山东省",
+    "page": "/37.html"
+  },
+  {
+    "region": "河南省",
+    "page": "/41.html"
+  },
+  {
+    "region": "湖北省",
+    "page": "/42.html"
+  },
+  {
+    "region": "湖南省",
+    "page": "/43.html"
+  },
+  {
+    "region": "广东省",
+    "page": "/44.html"
+  },
+  {
+    "region": "广西壮族自治区",
+    "page": "/45.html"
+  },
+  {
+    "region": "海南省",
+    "page": "/46.html"
+  },
+  {
+    "region": "重庆市",
+    "page": "/50.html"
+  },
+  {
+    "region": "四川省",
+    "page": "/51.html"
+  },
+  {
+    "region": "贵州省",
+    "page": "/52.html"
+  },
+  {
+    "region": "云南省",
+    "page": "/53.html"
+  },
+  {
+    "region": "西藏自治区",
+    "page": "/54.html"
+  },
+  {
+    "region": "陕西省",
+    "page": "/61.html"
+  },
+  {
+    "region": "甘肃省",
+    "page": "/62.html"
+  },
+  {
+    "region": "青海省",
+    "page": "/63.html"
+  },
+  {
+    "region": "宁夏回族自治区",
+    "page": "/64.html"
+  },
+  {
+    "region": "新疆维吾尔自治区",
+    "page": "/65.html"
+  }
+]
