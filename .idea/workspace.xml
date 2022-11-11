@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c7bde94-0da0-42bf-8f1c-001f1e0de2dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/citiesPage.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/provincePage.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Fetch.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Spider.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/UserAgent.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/IPage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/IProvince.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/IRegion.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regions/cities.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regions/counties.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regions/provinces.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="0c7bde94-0da0-42bf-8f1c-001f1e0de2dc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +100,7 @@
       <workItem from="1667989601174" duration="119000" />
       <workItem from="1668013624888" duration="337000" />
       <workItem from="1668025756848" duration="63000" />
-      <workItem from="1668054938026" duration="19397000" />
+      <workItem from="1668054938026" duration="21066000" />
     </task>
     <servers />
   </component>
