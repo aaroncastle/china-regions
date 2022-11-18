@@ -13,7 +13,7 @@ export class Spider {
         return await axiosInstance.get(url)
     }
 
-    static async getProvincePage(url = '/',selector = '.provincetr'): Promise<IPages[]> {
+    static async getProvincePage(url = '/', selector = '.provincetr'): Promise<IPages[]> {
         const filePath = path.resolve(__filename, '../../asset/provincePage.json')
         const provincePathList = await Store.readFile(filePath)
         if (provincePathList && url === '/') {
@@ -39,7 +39,7 @@ export class Spider {
         }
     }
 
-    static async getCities() : Promise<IProvince[]>{
+    static async getCities(): Promise<IProvince[]> {
         const val = await Store.readFile(path.resolve(__filename, '../../asset/provincePage.json'))
         let pageList: IPages[];
         if (val) {
@@ -84,18 +84,18 @@ export class Spider {
                     if (Object.is(i, 1)) {
                         if (Object.is($(item).html(), '市辖区')) {
                             city.name = iPage.region
-                        } else if (Object.is($(item).html(), '省直辖县级行政区划')) {
+                        } else if (Object.is($(item).html(), '省直辖县级行政区划') || Object.is($(item).html(), '自治区直辖县级行政区划')) {
                             /* 如果是省辖市 需要深度处理*/
                             /* 清除上个记录的省辖市 */
                             const temp = citiesData.find(pc => pc.province === pubCode)
                             if (temp) {
-                            temp.cities = temp.cities.filter(cy => cy.page !== '/' + $(item).attr()?.href)
+                                temp.cities = temp.cities.filter(cy => cy.page !== '/' + $(item).attr()?.href)
                             }
                             /* 直接请求省辖市 */
-                            this.getProvincePage('/' + $(item).attr()?.href,'.countytr').then(r => {
+                            this.getProvincePage('/' + $(item).attr()?.href, '.countytr').then(r => {
                                 /* 请求得到的省辖市更换地址 */
                                 r.forEach(reg => {
-                                    reg.page = '/' + $(item).attr()?.href.replace(/\/\d*\.html$/,reg.page) || ''
+                                    reg.page = '/' + $(item).attr()?.href.replace(/\/\d*\.html$/, reg.page) || ''
                                 })
                                 const codeCity = r.filter(it => /\d/.test(it.region))
                                 const codeName = r.filter(it => /[\u4e00-\u9fa5]/.test(it.region))
@@ -106,10 +106,10 @@ export class Spider {
                                 const target = citiesData.find(it => it.province === codeCity[0].region.replace(/\d/g, (iterm, index) => index < 2 ? iterm : '0'))
                                 if (target) {
                                     target.cities.push(...codeCity)
-                                }else {
+                                } else {
                                     citiesData.push({
                                         province: codeCity[0].region.replace(/\d/g, (iterm, index) => index < 2 ? iterm : '0'),
-                                        cities: [...codeCity]
+                                        cities: [ ...codeCity ]
                                     })
                                 }
                             })
@@ -130,13 +130,13 @@ export class Spider {
         }
         const value = await Store.readFile(path.resolve(__filename, '../../regions/provinces.json'))
         if (!value) {
-            await Store.writeFile(path.resolve(__filename, '../../regions/provinces.json'), provinces, ['name','code'])
+            await Store.writeFile(path.resolve(__filename, '../../regions/provinces.json'), provinces, [ 'name', 'code' ])
             await Store.writeFile(path.resolve(__filename, '../../regions/cities.json'), provinces)
         }
         return citiesData
     }
 
-    static async getCitiesPage() : Promise<IPages[]>{
+    static async getCitiesPage(): Promise<IPages[]> {
         const val = await Store.readFile(path.resolve(__filename, '../../asset/citiesPage.json'))
         let citiesPage: IPages[]
         if (val) {
@@ -148,44 +148,58 @@ export class Spider {
         return citiesPage
     }
 
-    static async getCounties():Promise<IRegion[]> {
+    static async getCounties(): Promise<IRegion[]> {
+        const citiesFile = await Store.readFile(path.resolve(__filename, '../../regions/counties.json'))
+        if (citiesFile) {
+            return JSON.parse(citiesFile)
+        }
         const queryList = await this.getCitiesPage();
         const result = await (Store.readFile(path.resolve(__filename, '../../regions/cities.json')))
-        const cities = JSON.parse(result as string).reduce((prev,item) => [...item.children,...prev],[])
+        let cities;
+        if (result) {
+            cities = JSON.parse(result as string).reduce((prev, item) => [ ...item.children, ...prev ], [])
+        } else {
+            await this.getCities();
+            const tem = await (Store.readFile(path.resolve(__filename, '../../regions/cities.json')))
+            cities = JSON.parse(tem as string).reduce((prev, item) => [ ...item.children, ...prev ], [])
+        }
         for await (const city of cities as IRegion[]) {
             const url = queryList.find(item => item.region === city.code)?.page
             const response = await this.get(url)
             const $ = load(response.data)
-            const counties = $('.countytr').has('td a')
+            let counties = $('.countytr').has('td a')
+            if (!counties.length) {
+                counties =$('.towntr').has('td a')
+            }
             city.children = []
             for await (const county of counties) {
-                const temp :IRegion = {} as IRegion
-                    $('a', county).each((i, item) => {
-                        if (Object.is(i, 0)) {
-                            temp.code = $(item).html() as string
-                        }
-                        if (Object.is(i, 1)) {
-                            temp.name = $(item).html() as string
-                        }
-                    })
+                const temp: IRegion = {} as IRegion
+                $('a', county).each((i, item) => {
+                    if (Object.is(i, 0)) {
+                        temp.code = $(item).html() as string
+                    }
+                    if (Object.is(i, 1)) {
+                        temp.name = $(item).html() as string
+                    }
+                })
                 city.children.push(temp)
                 console.log(temp.name + '  爬取完成')
             }
             console.log(city.name + '  所有区县爬取完成' + '等待 1 秒用于伪装正常浏览')
             await this.delay();
         }
-        const citiesFile = await Store.readFile(path.resolve(__filename,'../../regions/counties.json'))
+        cities.sort((a, b) => a.code - b.code)
         if (!citiesFile) {
-            await Store.writeFile(path.resolve(__filename,'../../regions/counties.json'),cities)
+            await Store.writeFile(path.resolve(__filename, '../../regions/counties.json'), cities)
         }
         return cities
     }
 
-    static delay(during = 1000): Promise<void>{
+    static delay(during = 1000): Promise<void> {
         return new Promise(resolve => {
-            setTimeout(()=> {
-               resolve();
-            },during)
+            setTimeout(() => {
+                resolve();
+            }, during)
         })
     }
 }

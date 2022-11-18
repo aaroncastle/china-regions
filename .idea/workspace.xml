@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c7bde94-0da0-42bf-8f1c-001f1e0de2dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Spider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Spider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regions/counties.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,8 @@
       <workItem from="1668013624888" duration="337000" />
       <workItem from="1668025756848" duration="63000" />
       <workItem from="1668054938026" duration="21066000" />
-      <workItem from="1668137724490" duration="864000" />
+      <workItem from="1668137724490" duration="1672000" />
+      <workItem from="1668801718152" duration="4910000" />
     </task>
     <servers />
   </component>
